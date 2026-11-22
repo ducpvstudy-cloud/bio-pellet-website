@@ -1,0 +1,320 @@
+/* Premium Botanical Editorial — campaign, field notes, catalogue, digital care. */
+.home-page { background: var(--cream); }
+.campaign-hero { position: relative; isolation: isolate; min-height: 790px; overflow: hidden; background: #f6f3eb; }
+.hero-image-wrap { position: absolute; top: 0; right: 0; bottom: 57px; width: 62%; z-index: -1; }
+.hero-image { width: 100%; height: 100%; mask-image: linear-gradient(to right,transparent 0%,#000 19%); }
+.hero-image img { object-position: 56% 53%; }
+.hero-image-note { position: absolute; bottom: 22px; right: 40px; font-size: 10px; letter-spacing: .14em; color: #5a654f; }
+.hero-ambient { position: absolute; right: 21px; top: 31px; writing-mode: vertical-rl; font-size: 10px; letter-spacing: .25em; color: #5e7354; z-index: 2; }
+.hero-content { padding-top: 65px; padding-bottom: 95px; }
+.hero-content > .eyebrow { margin-bottom: 25px; font-size: 10px; letter-spacing: .15em; }
+.hero-content h1 { font-size: clamp(75px,7.6vw,116px); line-height: 1.04; letter-spacing: -.07em; max-width: 700px; font-weight: 500; }
+.hero-content h1 em { color: #4c6e3b; letter-spacing: -.065em; }
+.hero-tagline { font-size: 25px; color: var(--forest); letter-spacing: -.04em; margin-top: 21px; }
+.hero-description { font-size: 16px; line-height: 1.9; max-width: 370px; margin-top: 22px; color: #53634d; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 20px 25px; align-items: center; max-width: 490px; margin-top: 27px; }
+.hero-actions .button { font-size: 14px; padding-inline: 24px; }
+.hero-actions .text-link { font-size: 13px; }
+.hero-function-list { display: flex; gap: 23px; flex-wrap: wrap; margin-top: 31px; }
+.hero-function-list > span { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #3b5732; }
+.hero-function-list svg { width: 18px; height: 18px; stroke-width: 1.5; }
+.hero-foot { position: absolute; bottom: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-top: 1px solid #cdd3c1; padding: 17px 55px; font-size: 10px; letter-spacing: .1em; color: #53664b; }
+.hero-foot > a { letter-spacing: 0; display: flex; gap: 20px; font-size: 12px; }
+.hero-foot > a > span { font-size: 19px; line-height: 1; }
+
+/* The story unfolds around one living photograph. */
+.story-topline { display: flex; align-items: baseline; justify-content: space-between; gap: 30px; border-top: 1px solid var(--border); padding-top: 25px; }
+.story-topline > span { font-size: 13px; color: #7a846e; }
+.story-layout { display: grid; grid-template-columns: 1.15fr 1fr; gap: 100px; padding-top: 25px; align-items: center; }
+.story-copy h2 { font-size: clamp(43px,4.5vw,68px); line-height: 1.18; }
+.story-copy h2 em { color: #698157; }
+.story-copy > p { font-size: 16px; max-width: 430px; margin-top: 24px; line-height: 1.95; }
+.story-signature { font-size: 13px; display: flex; gap: 12px; align-items: center; margin-top: 30px; color: #6c7b5c; }
+.signature-line { width: 28px; height: 1px; background: #9f8b68; flex-shrink: 0; }
+.story-photo { position: relative; padding-right: 25px; }
+.story-photo > .photo { width: 100%; aspect-ratio: 4/5; border-radius: 45% 45% 0 0; }
+.story-photo figcaption { display: flex; justify-content: space-between; gap: 20px; font-size: 10px; letter-spacing: .07em; padding-top: 17px; color: #4b6542; }
+.story-photo figcaption > span:last-child { font-size: 10px; letter-spacing: 0; color: #7e866f; }
+.photo-side-label { position: absolute; top: 50%; right: -6px; writing-mode: vertical-rl; font-size: 10px; letter-spacing: .2em; color: #738465; }
+.story-insights { display: grid; grid-template-columns: repeat(3,1fr); gap: 40px; margin-top: 65px; border-top: 1px solid var(--border); padding-top: 27px; }
+.story-insights > div { position: relative; padding-left: 41px; }
+.story-insights svg { position: absolute; left: 0; top: 1px; color: #7d9167; }
+.story-insights h3 { font-size: 17px; font-weight: 600; letter-spacing: -.025em; }
+.story-insights p { font-size: 14px; line-height: 1.8; margin-top: 8px; }
+
+/* A botanical research diagram, rather than a row of feature cards. */
+.science-section { background: #e8edde; border-block: 1px solid #d5ddc8; }
+.science-section h2 em { color: #6b8258; }
+.science-section .section-heading { margin-bottom: 15px; }
+.care-science { display: grid; grid-template-columns: 1fr 1.8fr 1fr; grid-template-rows: 1fr 1fr; column-gap: 45px; position: relative; min-height: 590px; align-items: center; }
+.science-connectors { position: absolute; inset: 0; width: 100%; height: 100%; color: #93a47d; pointer-events: none; }
+.care-core { position: relative; grid-column: 2; grid-row: 1 / span 2; width: 100%; aspect-ratio: 1/1; }
+.science-orbit { position: absolute; inset: 1%; border: 1px solid #b1bf9b; border-radius: 50%; }
+.science-orbit::before { content: ''; position: absolute; inset: -20px; border: 1px dashed #c7d1b7; border-radius: 50%; }
+.science-product { position: absolute; inset: 8%; border-radius: 50%; }
+.science-product img { object-position: 51% center; }
+.core-caption { position: absolute; top: calc(100% + 20px); left: 0; right: 0; text-align: center; font-size: 10px; letter-spacing: .14em; color: #566a46; }
+.core-caption em { display: block; font-family: var(--font-serif); font-size: 15px; text-transform: none; letter-spacing: -.02em; margin-top: 3px; }
+.science-callout { position: relative; z-index: 1; }
+.science-callout.moisture { grid-column: 1; grid-row: 1 / span 2; }
+.science-callout.nutrition { grid-column: 3; grid-row: 1; padding-top: 20px; }
+.science-callout.soil { grid-column: 3; grid-row: 2; padding-top: 20px; }
+.science-icon { display: block; color: #587542; margin-bottom: 10px; }
+.science-icon svg { width: 32px; height: 32px; }
+.science-callout > .eyebrow { margin-bottom: 9px; font-size: 10px; letter-spacing: .12em; color: #6d8157; }
+.science-callout h3 { font-size: 28px; line-height: 1.25; margin-bottom: 13px; letter-spacing: -.04em; }
+.science-callout > p:not(.eyebrow) { font-size: 14px; line-height: 1.9; max-width: 240px; }
+.material-label { display: block; width: fit-content; padding-top: 11px; margin-top: 13px; border-top: 1px solid #becaad; color: #526846; font-size: 12px; }
+.research-caption { display: flex; gap: 14px; align-items: flex-start; border-top: 1px solid #c2cdb1; margin-top: 40px; padding-top: 23px; }
+.research-caption > svg { color: #728b58; margin-top: 2px; }
+.research-caption p { font-size: 12px; line-height: 1.9; max-width: 900px; color: #627453; }
+.research-caption strong { color: #36532d; font-weight: 600; margin-right: 5px; }
+
+.design-section { padding-block: 50px 55px; border-bottom: 1px solid var(--border); }
+.design-heading { display: flex; justify-content: space-between; gap: 30px; align-items: center; margin-bottom: 32px; }
+.design-heading .eyebrow { margin: 0; font-size: 10px; }
+.design-heading h2 { font-size: 28px; }
+.design-notes { display: grid; grid-template-columns: repeat(4,1fr); gap: 30px; }
+.design-notes article { padding-left: 23px; border-left: 1px solid #cbd3bf; }
+.design-notes article:first-child { padding-left: 0; border: 0; }
+.design-notes svg { color: #7a8d61; margin-bottom: 12px; }
+.design-notes h3 { font-size: 17px; line-height: 1.4; font-weight: 600; }
+.design-notes p { font-size: 13px; line-height: 1.85; margin-top: 7px; }
+
+/* Product portraits: generous imagery and an asymmetrical catalogue rhythm. */
+.collection-intro { max-width: 325px; }
+.collection-intro > p { font-size: 16px; line-height: 1.9; }
+.collection-status { display: block; margin-top: 16px; color: #8b795e; font-size: 12px; }
+.catalogue-grid { display: grid; grid-template-columns: 1.12fr 1fr; column-gap: 62px; row-gap: 65px; }
+.catalogue-product:nth-child(even) { padding-top: 85px; }
+.catalogue-image-link { display: block; position: relative; overflow: hidden; }
+.catalogue-photo { width: 100%; aspect-ratio: 1.2/1; }
+.catalogue-trio .catalogue-photo, .catalogue-gift .catalogue-photo { aspect-ratio: 1.28/1; }
+.catalogue-photo img { transition: transform .75s cubic-bezier(.2,.65,.25,1); }
+.catalogue-image-link:hover img { transform: scale(1.045); }
+.catalogue-image-caption { position: absolute; bottom: 20px; left: 22px; right: 22px; color: #5b654d; font-size: 11px; font-weight: 500; letter-spacing: .02em; }
+.catalogue-details { display: flex; justify-content: space-between; gap: 25px; padding-top: 23px; }
+.catalogue-brand { display: block; font-size: 10px; letter-spacing: .16em; color: #7b856d; margin-bottom: 5px; }
+.catalogue-details h3 { font-size: 40px; line-height: 1.2; letter-spacing: -.045em; }
+.product-period { color: #a87951; }
+.catalogue-details > div:first-child > p { font-size: 14px; max-width: 290px; line-height: 1.85; margin-top: 10px; }
+.catalogue-action { padding-top: 19px; text-align: right; flex-shrink: 0; display: flex; flex-direction: column; align-items: flex-end; }
+.product-price { font-size: 13px; color: #3d5733; font-weight: 550; }
+.catalogue-action small { font-size: 11px; color: #8a8b78; margin-top: 3px; }
+.catalogue-action .text-link { font-size: 12px; margin-top: 17px; white-space: nowrap; }
+
+/* A full-width editorial material spread. */
+.ingredients-editorial { background: #eae2d5; padding-top: 80px; }
+.ingredients-head { padding-bottom: 45px; text-align: center; }
+.ingredients-head .eyebrow { justify-content: center; color: #8c7656; }
+.ingredients-head h2 { font-size: clamp(37px,4vw,59px); }
+.ingredients-head h2 em { color: #6e7d56; }
+.ingredient-spread { display: grid; grid-template-columns: 1fr 1fr; }
+.ingredient-frame { position: relative; min-width: 0; }
+.ingredient-photo { width: 100%; height: 100%; min-height: 730px; }
+.ingredient-frame > figcaption { position: absolute; bottom: 24px; left: 30px; font-size: 10px; letter-spacing: .12em; padding: 6px 12px; background: #f7f4eadb; color: #6f6348; }
+.ingredient-text { padding: 40px clamp(35px,5.5vw,85px) 45px; }
+.ingredient-large-word { display: block; font-family: var(--font-serif); font-style: italic; color: #938f70; font-size: clamp(60px,7.8vw,118px); line-height: 1; letter-spacing: -.07em; margin-bottom: 32px; }
+.ingredient-lead { font-size: 25px; line-height: 1.4; color: #365135; letter-spacing: -.035em; margin-bottom: 22px; }
+.ingredient-text > p:not(.ingredient-lead) { font-size: 15px; line-height: 1.95; max-width: 460px; }
+.material-story-list { margin: 25px 0; padding: 0; border-top: 1px solid #c9c8b1; }
+.material-story-list > div { padding-block: 15px; border-bottom: 1px solid #c9c8b1; }
+.material-story-list dt { color: #3d5736; font-size: 15px; font-weight: 550; }
+.material-story-list dd { margin: 4px 0 0; font-size: 13px; color: #787c65; }
+.circular-note { display: flex; align-items: center; gap: 14px; color: #72825a; }
+.circular-note p { font-size: 12px; line-height: 1.9; color: #657552; }
+.circular-note strong { font-weight: 500; }
+
+/* The digital companion, demonstrated rather than described. */
+.smart-showcase { background: var(--forest-deep); color: #e7eddb; overflow: hidden; }
+.smart-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 70px; margin-bottom: 55px; }
+.smart-heading .eyebrow { color: #afc396; }
+.smart-heading h2 { color: #f4f4e8; }
+.smart-heading h2 em { color: #b4c79e; }
+.smart-heading > div:last-child { max-width: 320px; }
+.smart-heading > div:last-child > p { color: #c1ceb2; font-size: 16px; line-height: 1.9; }
+.smart-heading .button { margin-top: 25px; }
+.smart-device { background: #f6f7ee; border: 8px solid #3b5540; border-bottom-width: 12px; border-radius: 15px; box-shadow: 0 35px 65px #001b1640; color: var(--text); overflow: hidden; transform: perspective(1800px) rotateX(2deg); }
+.device-toolbar { height: 38px; background: #e8ecde; border-bottom: 1px solid #d5ddc7; display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 0 20px; font-size: 10px; color: #718063; }
+.window-dots { display: flex; gap: 6px; }
+.window-dots > i { width: 7px; height: 7px; border: 1px solid #9baa8c; border-radius: 50%; }
+.device-demo { font-size: 9px; letter-spacing: .1em; }
+.device-layout { display: grid; grid-template-columns: 200px 1fr; }
+.device-sidebar { background: #f0f3e7; border-right: 1px solid #dce4d0; padding: 27px 20px; display: flex; flex-direction: column; gap: 15px; }
+.device-logo { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; font-size: 21px; font-weight: 600; letter-spacing: -.045em; margin-bottom: 22px; }
+.device-logo > span { width: 100%; font-size: 10px; letter-spacing: .05em; margin-left: 33px; color: #879476; font-weight: 400; margin-top: -8px; }
+.device-sidebar > a,.device-sidebar > span:not(.device-logo) { display: flex; gap: 8px; align-items: center; font-size: 12px; padding: 10px 9px; color: #718461; }
+.device-sidebar .device-nav-active { color: #37592e !important; background: #e1ead5; border-radius: 3px; font-weight: 600; }
+.sidebar-motto { margin-top: auto; padding-top: 50px; }
+.sidebar-motto > svg { color: #a1b786; }
+.sidebar-motto > p { font-size: 12px; color: #7f906d; margin-top: 11px; }
+.device-main { padding: 30px; min-width: 0; }
+.device-welcome { display: flex; justify-content: space-between; gap: 25px; align-items: center; }
+.device-eyebrow { font-size: 9px; letter-spacing: .13em; color: #879578; }
+.device-welcome h3 { font-size: 25px; margin-top: 5px; }
+.device-welcome p { font-size: 12px; margin-top: 8px; color: #80906f; }
+.device-add { background: #325a36; color: white; display: inline-flex; gap: 6px; align-items: center; padding: 8px 12px; border-radius: 3px; font-size: 11px; white-space: nowrap; }
+.device-overview { display: grid; grid-template-columns: repeat(3,1fr); gap: 15px; margin-block: 24px; }
+.device-overview > div { border: 1px solid #dbe3ce; background: #edf1e5; padding: 14px 18px; border-radius: 5px; }
+.device-overview span { font-size: 11px; color: #7c8a6d; }
+.device-overview strong { display: flex; justify-content: space-between; align-items: center; font-weight: 500; font-size: 30px; line-height: 1.4; color: #3c6037; margin-top: 4px; }
+.device-overview svg { color: #90a574; stroke-width: 1.4; }
+.device-content { display: grid; grid-template-columns: .9fr 1.1fr; gap: 20px; }
+.device-plant { background: #fffef8; border: 1px solid #dbe3cf; border-radius: 5px; overflow: hidden; }
+.device-plant-art { height: 153px; position: relative; background: #e7eddd; }
+.device-plant-art > .botanical { display: block; max-width: 150px; margin: auto; }
+.device-plant-art > span { position: absolute; bottom: 12px; left: 14px; font-size: 8px; letter-spacing: .1em; color: #5d7750; }
+.device-plant > div:last-child { padding: 16px; }
+.device-plant h4 { font-size: 17px; }
+.device-plant p { display: flex; gap: 5px; align-items: center; font-size: 10px; margin-top: 7px; }
+.device-plant-tag { display: block; font-size: 10px; color: #6a8555; margin-top: 14px; }
+.device-agenda { background: #fffef8; border: 1px solid #dbe3cf; border-radius: 5px; padding: 20px; }
+.device-agenda h4 { font-size: 16px; }
+.device-week { display: flex; justify-content: space-between; gap: 6px; margin-top: 20px; }
+.device-week > div { flex: 1; display: flex; flex-direction: column; align-items: center; border-radius: 25px; padding: 9px 5px; gap: 4px; }
+.device-week span { font-size: 9px; color: #8b967d; }
+.device-week strong { font-size: 13px; font-weight: 550; }
+.device-week i { width: 3px; height: 3px; border-radius: 50%; background: #a9bb91; }
+.device-week .active { background: #3e653a; color: white; }
+.device-week .active span { color: #c8d7ba; }
+.device-task { display: flex; gap: 10px; align-items: center; border-top: 1px solid #e0e6d6; margin-top: 19px; padding-top: 17px; }
+.device-task > button { display: grid; place-items: center; background: transparent; border: 1px solid #aabb95; width: 21px; height: 21px; color: #4d7140; border-radius: 50%; padding: 0; flex-shrink: 0; }
+.device-task.done > button { background: #e4edd7; }
+.device-task > div { display: flex; flex-direction: column; gap: 4px; }
+.device-task strong { font-size: 11px; font-weight: 550; }
+.device-task span { font-size: 10px; color: #89977b; }
+.device-reset { display: inline-flex; align-items: center; gap: 6px; color: #5f7d4c; font-size: 10px; background: none; border: 0; border-bottom: 1px solid #a9bc92; padding: 4px 0; margin-top: 16px; }
+.device-footnote { font-size: 9px; color: #8c987e; margin-top: 17px; }
+.smart-promises { display: flex; justify-content: center; gap: 50px; margin-top: 35px; color: #b4c4a1; }
+.smart-promises > span { display: flex; align-items: center; gap: 11px; font-size: 13px; }
+.smart-promises svg { stroke-width: 1.4; }
+
+/* A continuous visual journey, with no square instruction cards. */
+.how-section { background: #f2f0e6; }
+.care-journey { display: grid; grid-template-columns: repeat(3,1fr); gap: 55px; position: relative; }
+.journey-path { position: absolute; width: 100%; height: 230px; left: 0; top: 30px; color: #bac5a7; pointer-events: none; }
+.journey-step { position: relative; }
+.step-number { position: absolute; left: 0; top: 9px; font-family: var(--font-serif); font-size: 48px; line-height: 1.1; color: #7d9167; z-index: 1; font-style: italic; letter-spacing: -.06em; }
+.step-number > span { color: #b39570; }
+.step-drawing { height: 240px; width: 100%; position: relative; }
+.step-drawing svg { width: 100%; height: 100%; }
+.journey-step h3 { font-size: 23px; margin-top: 14px; }
+.journey-step > p { font-size: 15px; line-height: 1.9; margin-top: 14px; }
+.inline-note { display: flex; align-items: flex-start; gap: 11px; padding-top: 24px; border-top: 1px solid #d4dbc8; margin-top: 40px; color: #8a9d74; }
+.inline-note p { font-size: 12px; color: #738262; }
+
+.corporate-section { background: #e9e5d9; }
+.corporate-section .eyebrow { color: #837254; }
+.corporate-intro { max-width: 340px; }
+.corporate-intro p { font-size: 16px; line-height: 1.9; }
+.corporate-intro .button { margin-top: 23px; background: transparent; border-color: #899773; }
+.corporate-intro .button:hover { background: #dce1ce; }
+.collection-banner { position: relative; }
+.collection-photo { width: 100%; aspect-ratio: 1365/768; }
+.collection-banner figcaption { display: flex; gap: 30px; justify-content: space-between; padding-top: 18px; color: #62714f; font-size: 10px; letter-spacing: .08em; }
+.collection-banner figcaption > span:last-child { letter-spacing: 0; }
+.faq-section { display: grid; grid-template-columns: .9fr 1.2fr; gap: 110px; }
+.faq-section > div > p:not(.eyebrow) { font-size: 15px; margin-top: 25px; }
+.faq-section .text-link { margin-top: 23px; font-size: 13px; }
+.faq-list details { border-bottom: 1px solid #cdd6c0; }
+.faq-list details:first-child { border-top: 1px solid #cdd6c0; }
+.faq-list summary { display: flex; justify-content: space-between; gap: 25px; align-items: center; list-style: none; cursor: pointer; font-size: 15px; font-weight: 500; line-height: 1.8; padding-block: 20px; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-plus { font-size: 24px; line-height: 1; color: #7e9168; transition: transform .25s; }
+.faq-list details[open] .faq-plus { transform: rotate(45deg); }
+.faq-list details > p { padding: 0 25px 23px 0; font-size: 14px; line-height: 1.95; }
+
+@media(min-width:1600px) {
+  .campaign-hero { min-height: 860px; } .hero-content { padding-top: 80px; } .hero-content h1 { font-size: 128px; }
+}
+@media(max-width:1100px) {
+  .campaign-hero { min-height: 760px; } .hero-content { padding-top: 55px; } .hero-content h1 { font-size: 87px; } .hero-image-wrap { width: 65%; } .hero-actions { flex-direction: column; align-items: flex-start; }
+  .story-layout { gap: 55px; } .care-science { column-gap: 30px; min-height: 580px; } .science-callout h3 { font-size: 25px; } .science-callout > p:not(.eyebrow) { font-size: 13px; } .science-connectors { opacity: .6; }
+  .catalogue-grid { column-gap: 35px; } .catalogue-details { flex-direction: column; gap: 10px; } .catalogue-action { align-items: flex-start; text-align: left; padding-top: 0; } .catalogue-action .text-link { margin-top: 12px; } .catalogue-product:nth-child(even) { padding-top: 65px; }
+  .ingredient-text { padding: 35px 40px; } .ingredient-large-word { font-size: 87px; } .ingredient-photo { min-height: 740px; }
+  .device-layout { grid-template-columns: 165px 1fr; } .device-sidebar { padding: 22px 14px; } .device-main { padding: 24px; } .device-content { grid-template-columns: .85fr 1.15fr; gap: 14px; } .device-welcome h3 { font-size: 22px; } .device-agenda { padding: 15px; } .device-task strong { font-size: 10px; }
+  .faq-section { gap: 65px; }
+}
+@media(max-width:800px) {
+  .hero-foot { padding-inline: 25px; } .hero-foot > span:last-child { display: none; } .hero-content h1 { font-size: 79px; } .hero-content > .eyebrow { max-width: 320px; font-size: 9px; } .hero-description { max-width: 300px; font-size: 15px; } .hero-tagline { font-size: 22px; } .hero-image-wrap { width: 66%; } .hero-image { mask-image: linear-gradient(to right,transparent 0%,#000 30%); }
+  .story-layout { gap: 35px; } .story-copy h2 { font-size: 42px; } .story-copy > p { font-size: 15px; } .story-photo { padding-right: 12px; } .photo-side-label { right: -9px; } .story-photo figcaption { display: block; } .story-photo figcaption > span { display: block; } .story-insights { gap: 25px; } .story-insights > div { padding-left: 0; } .story-insights svg { position: static; margin-bottom: 12px; } .story-insights h3 { font-size: 16px; }
+  .care-science { grid-template-columns: 1fr 1.4fr 1fr; gap: 20px; min-height: 540px; } .science-callout h3 { font-size: 23px; } .science-callout > p:not(.eyebrow) { font-size: 12px; } .science-callout > .eyebrow { font-size: 9px; } .science-icon svg { width: 27px; height: 27px; } .material-label { font-size: 10px; } .core-caption { font-size: 8px; } .core-caption em { font-size: 12px; } .science-connectors { display: none; }
+  .design-heading { display: block; } .design-heading .eyebrow { margin-bottom: 12px; } .design-notes { grid-template-columns: repeat(2,1fr); gap: 26px; } .design-notes article:nth-child(3) { border: 0; padding: 0; }
+  .ingredient-text { padding: 30px; } .ingredient-large-word { font-size: 75px; } .ingredient-lead { font-size: 22px; } .ingredient-text > p:not(.ingredient-lead) { font-size: 14px; } .material-story-list dt { font-size: 14px; } .material-story-list dd { font-size: 12px; } .ingredient-photo { min-height: 770px; }
+  .smart-heading { gap: 35px; } .smart-heading h2 { font-size: 37px; } .smart-heading > div:last-child > p { font-size: 14px; } .device-layout { grid-template-columns: 1fr; } .device-sidebar { display: none; } .device-main { padding: 25px; } .smart-promises { gap: 22px; } .smart-promises > span { font-size: 11px; gap: 7px; }
+  .care-journey { gap: 30px; } .step-drawing { height: 180px; } .step-number { font-size: 38px; } .journey-step h3 { font-size: 21px; } .journey-step > p { font-size: 14px; } .journey-path { height: 180px; top: 10px; }
+  .faq-section { gap: 35px; grid-template-columns: .8fr 1.2fr; } .faq-list summary { font-size: 14px; }
+}
+@media(max-width:600px) {
+  .campaign-hero { min-height: 0; padding-bottom: 0; }
+  .hero-content { padding-top: 34px; padding-bottom: 0; }
+  .hero-content > .eyebrow { max-width: none; font-size: 8px; letter-spacing: .1em; margin-bottom: 21px; gap: 10px; }
+  .hero-content h1 { font-size: clamp(64px,17vw,92px); line-height: 1.04; letter-spacing: -.07em; }
+  .hero-tagline { font-size: 22px; margin-top: 19px; }
+  .hero-description { font-size: 14px; line-height: 1.9; margin-top: 15px; max-width: 330px; }
+  .hero-description .desktop-break { display: none; }
+  .hero-actions { flex-direction: row; align-items: center; gap: 15px 18px; margin-top: 22px; }
+  .hero-actions .button { font-size: 13px; padding-inline: 15px; } .hero-actions .text-link { font-size: 12px; }
+  .hero-function-list { margin-top: 23px; gap: 20px; } .hero-function-list > span { font-size: 11px; gap: 6px; } .hero-function-list svg { width: 16px; height: 16px; }
+  .hero-image-wrap { position: relative; width: 100%; height: auto; aspect-ratio: 1.15/1; top: auto; right: auto; bottom: auto; margin-top: 18px; z-index: 0; }
+  .hero-image { mask-image: linear-gradient(to bottom,transparent 0%,#000 13%); }
+  .hero-image img { object-position: 50% 64%; }
+  .hero-image-note { bottom: 15px; right: 20px; font-size: 8px; }
+  .hero-ambient { display: none; }
+  .hero-foot { position: relative; padding: 13px 20px; font-size: 8px; gap: 10px; }
+  .hero-foot > a { font-size: 10px; gap: 10px; }
+  .story-topline { display: block; padding-top: 18px; } .story-topline > span { display: none; }
+  .story-layout { grid-template-columns: 1fr; gap: 30px; padding-top: 5px; }
+  .story-copy h2 { font-size: 45px; } .story-copy > p { font-size: 15px; margin-top: 20px; }
+  .story-signature { font-size: 12px; margin-top: 22px; }
+  .story-photo { width: 90%; margin-left: auto; padding-right: 15px; }
+  .story-photo > .photo { aspect-ratio: 4/4.7; } .story-photo figcaption { font-size: 8px; padding-top: 12px; } .story-photo figcaption > span:last-child { font-size: 9px; }
+  .photo-side-label { font-size: 8px; right: -4px; }
+  .story-insights { grid-template-columns: 1fr; gap: 20px; margin-top: 32px; padding-top: 25px; }
+  .story-insights > div { padding-left: 36px; } .story-insights svg { position: absolute; margin-bottom: 0; width: 23px; } .story-insights h3 { font-size: 17px; } .story-insights p { font-size: 13px; margin-top: 6px; }
+  .science-section .section-heading { margin-bottom: 30px; } .science-section .section-heading > p { font-size: 14px; }
+  .care-science { grid-template-columns: 1fr; grid-template-rows: auto; gap: 0; min-height: 0; }
+  .care-core { grid-column: 1; grid-row: 1; width: 80%; max-width: 350px; justify-self: center; margin-bottom: 65px; }
+  .core-caption { font-size: 9px; } .core-caption em { font-size: 13px; }
+  .science-orbit::before { inset: -12px; }
+  .science-callout.moisture,.science-callout.nutrition,.science-callout.soil { grid-column: 1; grid-row: auto; padding: 22px 0 22px 48px; border-top: 1px solid #c4cfb3; }
+  .science-icon { position: absolute; left: 0; top: 24px; } .science-icon svg { width: 29px; height: 29px; }
+  .science-callout h3 { font-size: 24px; margin-bottom: 10px; } .science-callout h3 br { display: none; }
+  .science-callout > .eyebrow { font-size: 10px; } .science-callout > p:not(.eyebrow) { font-size: 14px; max-width: none; }
+  .material-label { font-size: 11px; border: 0; padding: 0; margin-top: 12px; }
+  .research-caption { margin-top: 10px; gap: 11px; padding-top: 20px; } .research-caption p { font-size: 12px; } .research-caption strong { display: block; margin-bottom: 4px; }
+  .design-section { padding-block: 35px 40px; } .design-heading { margin-bottom: 25px; } .design-heading h2 { font-size: 27px; }
+  .design-notes { gap: 25px 20px; } .design-notes article { padding-left: 15px; } .design-notes h3 { font-size: 16px; } .design-notes p { font-size: 12px; }
+  .collection-intro { margin-top: 23px; max-width: none; } .collection-intro > p { font-size: 15px; } .collection-status { font-size: 11px; margin-top: 12px; }
+  .catalogue-grid { grid-template-columns: 1fr; gap: 38px; }
+  .catalogue-product:nth-child(even) { padding-top: 0; }
+  .catalogue-photo,.catalogue-trio .catalogue-photo,.catalogue-gift .catalogue-photo { aspect-ratio: 1.3/1; }
+  .catalogue-image-caption { font-size: 10px; bottom: 14px; left: 17px; }
+  .catalogue-details { display: grid; grid-template-columns: 1fr; gap: 14px; padding-top: 17px; } .catalogue-details h3 { font-size: 35px; } .catalogue-details > div:first-child > p { max-width: none; font-size: 14px; }
+  .catalogue-action { align-items: flex-start; } .catalogue-action .text-link { font-size: 13px; margin-top: 10px; } .product-price { font-size: 14px; }
+  .ingredients-editorial { padding-top: 50px; } .ingredients-head { text-align: left; padding-bottom: 30px; } .ingredients-head .eyebrow { justify-content: flex-start; font-size: 9px; } .ingredients-head h2 { font-size: 35px; }
+  .ingredient-spread { grid-template-columns: 1fr; } .ingredient-photo { min-height: 0; aspect-ratio: 1/1; }
+  .ingredient-frame > figcaption { bottom: 16px; left: 17px; right: 17px; font-size: 8px; padding: 6px 9px; width: fit-content; }
+  .ingredient-text { padding: 35px 20px 45px; } .ingredient-large-word { font-size: 76px; margin-bottom: 24px; } .ingredient-lead { font-size: 26px; } .ingredient-text > p:not(.ingredient-lead) { font-size: 15px; }
+  .material-story-list { margin-block: 25px; } .material-story-list dt { font-size: 15px; } .material-story-list dd { font-size: 13px; } .circular-note p { font-size: 12px; }
+  .smart-heading { display: block; margin-bottom: 30px; } .smart-heading h2 { font-size: 35px; } .smart-heading > div:last-child { max-width: none; margin-top: 23px; } .smart-heading > div:last-child > p { font-size: 15px; } .smart-heading .button { margin-top: 22px; }
+  .smart-device { border-width: 4px; border-bottom-width: 7px; border-radius: 8px; transform: none; margin-inline: -7px; }
+  .device-toolbar { gap: 10px; padding-inline: 11px; height: 30px; font-size: 8px; } .device-demo { font-size: 6px; letter-spacing: 0; } .window-dots { gap: 4px; } .window-dots > i { width: 5px; height: 5px; }
+  .device-main { padding: 17px 13px; } .device-welcome { gap: 10px; align-items: flex-start; } .device-welcome h3 { font-size: 20px; } .device-welcome p { font-size: 10px; } .device-eyebrow { font-size: 8px; } .device-add { font-size: 9px; padding: 7px; } .device-add svg { width: 12px; }
+  .device-overview { gap: 7px; margin-block: 18px; } .device-overview > div { padding: 10px 9px; } .device-overview span { font-size: 9px; display: block; min-height: 28px; } .device-overview strong { font-size: 25px; } .device-overview svg { width: 16px; height: 16px; }
+  .device-content { grid-template-columns: 1fr; gap: 12px; } .device-plant { display: grid; grid-template-columns: 100px 1fr; } .device-plant-art { height: 145px; } .device-plant-art > .botanical { max-width: 115px; } .device-plant-art > span { font-size: 6px; bottom: 7px; left: 8px; }
+  .device-plant > div:last-child { padding: 17px 12px; } .device-plant h4 { font-size: 17px; } .device-plant p { font-size: 9px; align-items: flex-start; } .device-plant-tag { font-size: 9px; }
+  .device-agenda { padding: 16px; } .device-agenda h4 { font-size: 17px; } .device-week { margin-top: 12px; gap: 5px; } .device-week span { font-size: 9px; } .device-week strong { font-size: 13px; }
+  .device-task { margin-top: 12px; padding-top: 14px; } .device-task strong { font-size: 11px; } .device-task span { font-size: 10px; } .device-reset { font-size: 11px; margin-top: 13px; padding-block: 7px; }
+  .device-footnote { font-size: 8px; line-height: 1.7; }
+  .smart-promises { flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 27px; } .smart-promises > span { font-size: 13px; }
+  .care-journey { grid-template-columns: 1fr; gap: 35px; padding-left: 28px; }
+  .journey-path { display: none; } .care-journey::before { content: ''; position: absolute; left: 3px; top: 20px; bottom: 30px; border-left: 1px dashed #bcc7a9; }
+  .journey-step::before { content: ''; width: 7px; height: 7px; background: #82976a; border-radius: 50%; position: absolute; left: -28px; top: 15px; }
+  .step-number { font-size: 43px; top: 0; } .step-drawing { height: 190px; padding-left: 25px; } .journey-step h3 { font-size: 23px; margin-top: 6px; } .journey-step > p { font-size: 14px; margin-top: 10px; }
+  .inline-note { margin-top: 28px; gap: 10px; } .inline-note p { font-size: 12px; }
+  .corporate-intro { margin-top: 23px; max-width: none; } .corporate-intro p { font-size: 15px; } .corporate-intro .button { margin-top: 20px; }
+  .collection-photo { aspect-ratio: 1.35/1; } .collection-photo img { object-position: 55% center; } .collection-banner figcaption { display: block; font-size: 9px; padding-top: 13px; } .collection-banner figcaption > span { display: block; margin-top: 5px; }
+  .faq-section { grid-template-columns: 1fr; gap: 30px; } .faq-section > div > p:not(.eyebrow) { margin-top: 20px; font-size: 14px; } .faq-section .text-link { margin-top: 19px; font-size: 13px; } .faq-list summary { font-size: 14px; gap: 15px; } .faq-list details > p { font-size: 14px; padding-right: 0; }
+}
+@media(prefers-reduced-motion:reduce) { .catalogue-image-link:hover img { transform: none; } .smart-device { transform: none; } }

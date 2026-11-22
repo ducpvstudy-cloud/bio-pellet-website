@@ -1,0 +1,14 @@
+{
+  "generator": "Built-in image_gen",
+  "usage": "AI-generated illustrative lifestyle and ingredient still-life assets; no manufactured GreenPulse products depicted.",
+  "assets": [
+    {
+      "file": "greenpulse-living.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: editorial lifestyle image for premium Vietnamese sustainable plant care website GreenPulse. Generate a single beautiful landscape photograph, 3:2 composition, quiet sunlit modern apartment study corner: a sculptural leafy pothos plant growing in a warm off-white ceramic pot on pale oak desk, edge of a closed slim silver laptop, a linen curtain, soft limewashed warm white wall. Plant dominant left and center, sophisticated natural botanical greens, warm cream, restrained earthy brown. Realistic small imperfect leaves, organic material textures, gentle morning sunlight and distinct elegant shadows. Art direction: high-end Kinfolk editorial photography, calm intimate real-life scene, credible understated luxury, plenty of breathing room. No people, no text, no lettering, no logo, no product packaging, no labels, no icons, no collage. This is lifestyle illustration only and must not show a fictional manufactured GreenPulse product."
+    },
+    {
+      "file": "greenpulse-materials.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: editorial ingredient still life for premium eco botanical website. Single landscape 3:2 photograph, tactile natural materials arranged with deliberate elegant negative space on warm cream limestone tabletop: a freshly peeled orange with curling orange peel, a small restrained loose nest of coconut coir fiber, subtle dark garden soil in a small matte earthy ceramic saucer, small cassava starch powder in a second shallow off-white ceramic dish. One small leafy branch in the background. Side-lit soft natural sunlight, cinematic yet minimal, honest photographic realism, close view with sophisticated composition, forest green accent, earth brown, warm desaturated orange. High-end sustainable skincare-style editorial still life. Do not depict laboratory results, hydrogel crystals, manufactured pills, certificates, microbes or scientific evidence. No text, no logo, no lettering, no labels, no collage."
+    }
+  ]
+}
